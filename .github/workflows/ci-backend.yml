@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Lista arquivos
-        runs: ls ${{github.workspace}}
+        run: ls ${{github.workspace}}
       - name: Status 
         run: echo "Status ${{job.status}}."   
