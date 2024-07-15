@@ -15,7 +15,8 @@ jobs:
       - name: Ckeckout
         uses: actions/checkout@v4
       - name: Deploy
-        uses: johnBeynon/render-deploy-action@v0.0.8
+        uses: johnBeynon/render-deploy-action@master
         with:
           service-id: ${{secrets.RENDER_SERVICE_ID }}
-          api-key: ${{ secrets.RENDER_API_KEY }}       
+          api-key: ${{ secrets.RENDER_API_KEY }} 
+          wait-for-sucess: true      
